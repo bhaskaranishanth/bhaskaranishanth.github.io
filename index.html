@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nishanth's Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Buenard:700' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--
+  <script src="https://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
+  !-->
+  <script src="./jquery.mb.YTPlayer/dist/jquery.mb.YTPlayer.js" ></script>
+  <script>
+	$(document).ready(function () {
+    $(".player").mb_YTPlayer();
+
+	});
+  </script>
+<style>
+	
+	/* This is to make sure that there isn't any white space around the corners */
+	body {
+ 		margin-top: 0;
+ 		margin-right: 0;
+ 		margin-bottom: 0;
+ 		margin-left: 0;
+	}
+
+	/* This is a simple class that will give us no padding on any side */
+	.no-padding{
+		padding-left: 0;
+		padding-right: 0;
+		padding-top:  0;
+		padding-bottom: 0;
+	}
+
+	/* The top menu bar will hold all of the hyperlinks to other pages on the site */
+	.topHeader{
+		background-image: url("grayBackground.jpg");
+		height: 50px;
+		width: 100%;
+		top: 0;
+		margin: 0;
+		position: fixed;
+		text-align: center;
+		z-index: 1000;
+
+	}
+
+	/* Different buttons on the menu bar */
+	.menuButtons{
+		height: 50px;
+		line-height: 50px;
+		width: 200px;
+		background-color: transparent;
+		color: #D3D3D3;
+		font-size: 18;
+		text-align: center;
+		vertical-align: middle;
+		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		display: inline-block; 
+		margin: auto;
+	}
+
+	/* When we hover over the button, the text will pop out and change color */
+	.menuButtons:hover{
+		top: 0;
+		vertical-align: top;
+		color: white;
+		font-size: 22;
+	}
+	.mainSection{
+		width: 100%;
+		height: 900px;
+	}
+	.videoClass {
+		width: 100%;
+		z-index: -1;
+		overflow: hidden;
+		margin: 0;
+	}
+	.mainSection2{
+		width: 100%;
+		height: 2000px;
+		background-color: red;
+	}
+  .bottomSection {
+    width: 100%;
+    background-color: red;
+    height: 600px;
+    margin-top: 0;
+
+  }
+	.carousel-inner > .item > img,
+  	.carousel-inner > .item > a > img {
+      width: 100%;
+      margin: 0;
+  	}
+	.video-section .pattern-overlay {
+		background-color: rgba(71, 71, 71, 0.59);
+		padding: 110px 0 32px;
+		height: 600px; 
+		/* Incase of overlay problems just increase the min-height*/
+	}
+	.video-section h1, .video-section h3{
+		text-align:center;
+		color:#fff;
+	}
+	.video-section h1{
+		font-size:110px;
+		font-family: 'Buenard', serif;
+		font-weight:bold;
+		text-transform: uppercase;
+		margin: 40px auto 0px;
+		text-shadow: 1px 1px 1px #000;
+		-webkit-text-shadow: 1px 1px 1px #000;
+		-moz-text-shadow: 1px 1px 1px #000;
+	}
+	.video-section h3{
+		font-size: 25px;
+		font-weight:lighter;
+		margin: 0px auto 15px;
+	}
+		.video-section .buttonBar{display:none;}
+		.player {font-size: 1px;}
+
+	}
+
+</style>
+</head>
+
+<body>
+
+<!-- This will be the beginning of the top menu bar !-->
+<div class = "topHeader">
+	<!-- Each of the buttons will be here !-->
+	<a href="#Welcome2"> <div class = "menuButtons"> Welcome </div> </a>
+	<a href="#carousel-example"> <div class = "menuButtons"> About Me </div> </a>
+	<a href = "#carousel-example2"> <div class = "menuButtons"> Skills </div> </a>
+	<a href = "#carousel-example3"> <div class = "menuButtons"> Few Of My Projects </div> </a>
+	<a href = "#carousel-example4"> <div class = "menuButtons"> Contact Info/Resume </div> </a>
+</div>
+<!--
+<div style = "background-color: red; margin-top: 50px; height: 500px;"></div>
+!-->
+<!--Video Section-->
+
+
+<div style = "margin-top: 50px" id = "Welcome" class="content-section video-section">
+  <div class="pattern-overlay">
+  <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=UrUlsMCAi0o',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+        <h1>Hello World</h1>  
+        <h3>My Name Is Nishanth Bhaskara</h3>
+        <h3>Welcome</h3>
+     </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Video Section Ends Here-->
+<div style="height: 600px; overlay: hidden"id="carousel-example" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example" data-slide-to="1"></li>
+    <li data-target="#carousel-example" data-slide-to="2"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div class="item active">
+      <a href="#"><img style="height: 600px; overlay: hidden" src="websiteCoding.jpg" /></a>
+      <div style = "margin-bottom: 150px; background: rgba(0,0,0,0.5);" class="carousel-caption">
+        <h1>Hi There!</h1>
+        <h3>My name is Nishanth, and I'm an incoming </h3>
+        <h3>sophomore at the California Institute Of Technology </h3>
+        <h3>double majoring in Computer Science and Applied </h3>
+        <h3>Computational Mathematics </h3>
+      </div>
+    </div>
+    <div class="item">
+      <a href="#"><img style="height: 600px; overlay: hidden" src="caltech.jpg" /></a>
+    <div style = "margin-bottom: 200px; background: rgba(0,0,0,0.5);" class="carousel-caption">
+        <h1>Interests:</h3>
+        <h3>Machine Learning, Big Data, Algorithm Design,</h3>
+        <h3>Trading Strategies, Capital Markets, Entrepreneurship</h3>
+        <h3>Game Engines, Artificial Neural Network Design, AI </h3>
+        <h3></h3>
+      </div>
+    </div>
+    <div class="item">
+      <a href="#"><img style="height: 600px; overlay: hidden" src="matrix.jpg" /></a>
+    <div style = "margin-bottom: 200px; background: rgba(0,0,0,0.5);" class="carousel-caption">
+        <h1> Hobbies </h1>
+        <h3> Weightlifting, Basketball, Running, </h3>
+        <h3> Codefights, Project Euler, HackerRank </h3>
+      </div>
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+<div style="height: 600px; overlay: hidden"id="carousel-example2" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example2" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example2" data-slide-to="1"></li>
+    <li data-target="#carousel-example2" data-slide-to="2"></li>
+    <li data-target="#carousel-example2" data-slide-to="3"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div class="item active">
+      <a href="#"><img style="height: 600px; overlay: hidden" src="p.jpg" /></a>
+      <div style = "margin-bottom: 150px; background: rgba(0,0,0,0.5);" class="carousel-caption">
+        <h2>Programming Languages/ Technologies:</h2>
+        <h3 style = "font-size: 140%"> <b> Well Versed: </b> IA32 Assembly, Python, C++, Swift, C, HTML, CSS, Github</h3>
+        <h3 style = "font-size: 140%"> <b> Proficient: </b> Java, Oracle Database, PL/SQL, MySQL, XCode, Android Studio </h3>
+        <h3 style = "font-size: 140%"><b> Experience In: </b> PHP, Ocaml, Appcelerator, Eclipse, Unity </h3>
+      </div>
+    </div>
+    <div class="item">
+      <a href="#"><img style="height: 600px; overlay: hidden" src="beckman.jpg" /></a>
+    <div style = "margin-bottom: 150px; background: rgba(0,0,0,0.5);" class="carousel-caption">
+        <h2> Coursework: Computer Science </h2>
+		<h3> 3.9 GPA at Caltech </h3>
+		<h3> Algorithms, Machine Learning, Learning Systems, </h3>
+		<h3> Networking, Introduction To Operating Systems </h3>
+      </div>
+    </div>
+    <div class="item">
+      <a href="#"><img style="height: 600px; overlay: hidden" src="chalkboard.jpg" /></a>
+    <div style = "margin-bottom: 150px; background: rgba(0,0,0,0.5);" class="carousel-caption">
+        <h2> Coursework: Mathematics </h2>
+		<h3> Calculus, Linear Algebra, Multivariable Calculus  </h3>
+		<h3> Introduction to Real Analysis, Classical Analysis </h3>
+		<h3> Differential Equations, Discrete Math/Number Theory </h3>
+      </div>
+    </div>
+    <div class="item">
+      <a href="#"><img style="height: 600px; overlay: hidden" src="mL.jpg" /></a>
+    <div style = "margin-bottom: 150px; background: rgba(0,0,0,0.5);" class="carousel-caption">
+        <h2> Machine Learning: Worked With </h2>
+		<h3> TensorFlow, Fully Connected Neural Networks, </h3>
+		<h3> Convolutional Neural Networks, KMeans, </h3>
+		<h3> Support Vector Machine, KNN, Random Forest </h3>
+      </div>
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#carousel-example2" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example2" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+<div style="height: 600px; overlay: hidden"id="carousel-example3" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example3" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example3" data-slide-to="1"></li>
+    <li data-target="#carousel-example3" data-slide-to="2"></li>
+    <li data-target="#carousel-example3" data-slide-to="3"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div class="item active">
+      <a href="#"><img style="height: 600px; overlay: hidden" src="brain.jpg" /></a>
+      <div style = "margin-bottom: 150px; background: rgba(0,0,0,0.5);" class="carousel-caption">
+        <h2>Convolutional Neurals Network For Autism Diagnosis</h2>
+        <h3 style = "font-size: 140%"> As an Undergraduate Aerospace Corporation Fellow, I conducted research</h3>
+        <h3 style = "font-size: 140%"> on the use of CONV nets for classification of matrices of rank 4. Used 4-D  </h3>
+        <h3 style = "font-size: 140%"> fMRI clips and CONV nets to diagnose patients part of a study </h3>
+        <h3 style = "font-size: 140%"> as autistic or not autistic. It is a private repository on my Github (see resume). </h3>
+      </div>
+    </div>
+    <div class="item">
+      <a href="#"><img style="height: 600px; overlay: hidden" src="reversi.jpg" /></a>
+    <div style = "margin-bottom: 150px; background: rgba(0,0,0,0.5);" class="carousel-caption">
+        <h2> Artificial Intelligence For Reversi </h2>
+		<h3 style = "font-size: 110%">Created a sophisticated AI engine for Reversi, or Othello using strategies such</h3>
+		<h3 style = "font-size: 110%">as Minimax, Alpha-Beta Pruning, Transposiiton Tables, and used Parallel Computing </h3>
+		<h3 style = "font-size: 110%">for faster decision making. Currently working on heuristic learning with machine</h3>
+		<h3 style = "font-size: 110%">learning models and extending methodology to improving existing chess A.I.'s. </h3>
+		<h3 style = "font-size: 110%">See on Github (see resume) </h3>
+      </div>
+    </div>
+    <div class="item">
+      <a href="#"><img style="height: 600px; overlay: hidden" src="garbage.jpg" /></a>
+    <div style = "margin-bottom: 150px; background: rgba(0,0,0,0.5);" class="carousel-caption">
+        <h2> Garbage Collector </h2>
+		<h3> Implemented a sophisticated garbage collector in C. </h3>
+		<h3> If interested, also check out my implementation of a memory</h3>
+		<h3> allocator, also written in C. See on Github (see resume) </h3>
+      </div>
+    </div>
+    <div class="item">
+      <a href="#"><img style="height: 600px; overlay: hidden" src="mL.jpg" /></a>
+    <div style = "margin-bottom: 150px; background: rgba(0,0,0,0.5);" class="carousel-caption">
+        <h2> Front End Projects </h2>
+		<h3> Caring Inc Professionals: Website, PCS Services: App,  </h3>
+		<h3> Classic Party Rentals Back Office Management: App </h3>
+		<h3> For more, see Github or resume.</h3>
+      </div>
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#carousel-example3" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example3" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+<div style="height: 600px; overlay: hidden"id="carousel-example4" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example4" data-slide-to="0" class="active"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div class="item active">
+      <a href="#"><img style="height: 600px; overlay: hidden" src="space.jpg" /></a>
+      <div style = "margin-bottom: 150px; background: rgba(0,0,0,0.5);" class="carousel-caption">
+        <h2>Check It Out!</h2>
+        <h1 style = "font-size: 180%"> Here's My <a href="Resume.pdf">Resume!</a> </h3>
+        <h1 style = "font-size: 180%"> Go Look At My <a href="https://github.com/bhaskaranishanth">Github</a>  </h3>
+        <h1 style = "font-size: 180%"> Read My <a href="SURF.pdf">Research Paper</a> </h3>
+      </div>
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#carousel-example4" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example4" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+
+</body>
+</html>
+<!-- End of top menu bar !-->
+
+
+
+
+
+<!-- Video introduction !-->
